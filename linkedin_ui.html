@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Jobs Replica</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+}
+
+body {
+  background-color: #f3f2ef;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #0a66c2;
+  font-size: 22px;
+}
+
+.search-bar {
+  width: 280px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #eef3f8;
+}
+
+.nav-right {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.sidebar {
+  width: 280px;
+}
+
+.main {
+  flex: 1;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.card-padding {
+  padding: 16px;
+}
+
+/* PROFILE */
+.profile-header {
+  background: #d7ccc8;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-content {
+  text-align: center;
+  padding: 16px;
+}
+
+.profile-content img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-top: -36px;
+  border: 3px solid #fff;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.profile-desc {
+  font-size: 13px;
+  color: #666;
+}
+
+/* MENU */
+.menu-item {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #f3f2ef;
+}
+
+/* JOB SECTION */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.job:first-child {
+  border-top: none;
+}
+
+.job img {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+}
+
+.job-info {
+  margin-left: 12px;
+  flex: 1;
+}
+
+.job-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0a66c2;
+}
+
+.job-company {
+  font-size: 13px;
+  color: #555;
+}
+
+.job-meta {
+  font-size: 12px;
+  color: green;
+}
+
+.job-close {
+  color: #999;
+  cursor: pointer;
+}
+
+/* PREMIUM CARD */
+.premium {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  background: #e7a33e;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <h2>LinkedIn</h2>
+  <input class="search-bar" placeholder="Describe the job you want" />
+  <div>Home | Jobs | Messaging</div>
+</div>
+
+<div class="container">
+
+  <div class="sidebar">
+    <div class="card profile">
+      <img src="images/profile.jpeg" alt="Profile">
+      <h3>Anagha Karade</h3>
+      <p>Student at IIT Madras</p>
+    </div>
+
+    <div class="card">
+      <p>Preferences</p>
+      <p>Job tracker</p>
+      <p>My Career Insights</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <h3>Jobs based on your activity</h3>
+
+      <div class="job">
+        <img src="images/1764597727124.jpeg" />
+        <div class="job-info">
+          <div class="job-title">Data Analyst Intern</div>
+          <div>Webs X UM · Remote</div>
+          <div class="green">Be an early applicant</div>
+        </div>
+        ✖
+      </div>
+
+      <div class="job">
+        <img src="images/1766120863057.jpeg" />
+        <div class="job-info">
+          <div class="job-title">Machine Learning Intern</div>
+          <div>SportsBuzz · Remote</div>
+          <div class="green">Be an early applicant</div>
+        </div>
+        ✖
+      </div>
+
+      <div class="job">
+        <img src="images/telusdigitalaidatasolutions_logo.jpeg" />
+        <div class="job-info">
+          <div class="job-title">Data Analyst Intern (Excel, SQL)</div>
+          <div>SkillFine Mentor · Remote</div>
+          <div class="green">Be an early applicant</div>
+        </div>
+        ✖
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h3>Apply smarter with jobs personalized for you</h3>
+      <button class="btn">Try Premium for ₹0</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
